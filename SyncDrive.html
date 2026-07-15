@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SyncDrive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --accent: #22c55e;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            object-fit: contain;
+            background-color: #000000;
+            padding: 4px;
+            border: 1.5px solid #1e293b;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-highlight {
+            color: var(--accent);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #0f172a;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0f172a;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #334155;
+            font-size: 16px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+            font-size: 15px;
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .badge {
+            background-color: #f1f5f9;
+            color: #475569;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid var(--border);
+        }
+
+        .badge.critical {
+            background-color: #fef2f2;
+            color: #991b1b;
+            border-color: #fee2e2;
+        }
+
+        .badge.sensitive {
+            background-color: #f0fdf4;
+            color: #166534;
+            border-color: #dcfce7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 15px;
+        }
+
+        table th, table td {
+            border: 1px solid var(--border);
+            padding: 12px 16px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f8fafc;
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        .highlight-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #0f766e;
+            font-weight: 500;
+        }
+
+        .contact-card {
+            background-color: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 30px;
+        }
+
+        .contact-card a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 20px;
+                border-radius: 12px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-wrap">
+            <img class="logo-img" src="./assets/icon/black -icon.png" alt="SyncDrive Logo">
+            <div class="logo-text">Sync<span class="logo-highlight">Drive</span></div>
+        </div>
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Last updated: July 15, 2026</div>
+    </header>
+
+    <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+    
+    <p>We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created to ensure full compliance with mobile platform guidelines, including the Google Play Store developer policies.</p>
+
+    <h2>Interpretation and Definitions</h2>
+    
+    <h3>Interpretation</h3>
+    <p>The words whose initial letters are capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+
+    <h3>Definitions</h3>
+    <p>For the purposes of this Privacy Policy:</p>
+    <ul>
+        <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
+        <li><strong>Application</strong> refers to <strong>SyncDrive</strong>, the software program provided by the Company.</li>
+        <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Privacy Policy) refers to SyncDrive.</li>
+        <li><strong>Country</strong> refers to: Bihar, India.</li>
+        <li><strong>Device</strong> means any device that can access the Service such as a computer, a cell phone or a digital tablet.</li>
+        <li><strong>Personal Data</strong> (or "Personal Information") is any information that relates to an identified or identifiable individual.</li>
+        <li><strong>Service</strong> refers to the Application.</li>
+        <li><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, or to assist the Company in analyzing how the Service is used.</li>
+        <li><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</li>
+        <li><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
+    </ul>
+
+    <h2>Collecting and Using Your Personal Data</h2>
+
+    <h3>Types of Data Collected</h3>
+    
+    <h4>1. Personal Data</h4>
+    <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information includes:</p>
+    <ul>
+        <li>First name and last name</li>
+        <li>Age and driving experience level</li>
+        <li>Vehicle information (Vehicle classification, model name, and registration plate number)</li>
+    </ul>
+
+    <h4>2. Usage Data</h4>
+    <p>Usage Data is collected automatically when using the Service.</p>
+    <p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), mobile OS version, unique device identifiers, time and date of visits, and diagnostic telemetry data.</p>
+
+    <h2>Critical Permissions & Telemetry Data Collection</h2>
+    <p>To provide advanced driving analytics, scoring engines, and profile personalization features, SyncDrive requests access to sensitive device permissions. We collect and process the following telemetry data with your prior permission:</p>
+
+    <div class="badge-list">
+        <span class="badge critical">Location Tracking</span>
+        <span class="badge sensitive">Motion Sensors</span>
+        <span class="badge sensitive">Audio/Microphone</span>
+        <span class="badge">Camera Access</span>
+        <span class="badge">Photo Library</span>
+    </div>
+
+    <h3>A. Detailed Location Data (Foreground Tracking)</h3>
+    <p>While using the Application to track a trip, we collect precise latitude, longitude, speed, and heading coordinates from your device's GPS system.</p>
+    <ul>
+        <li><strong>Purpose:</strong> We use location coordinates to map your driving route, display route replays on the map, and measure vehicle speed to generate safety metrics.</li>
+        <li><strong>Data Handling:</strong> This telemetry data is gathered <strong>exclusively in the foreground</strong> while a driving tracking session is active. Location traces are processed locally and are not transmitted to third-party servers without your explicit direction.</li>
+    </ul>
+
+    <h3>B. Motion and Sensor Telemetry</h3>
+    <p>We read high-frequency data from your device's physical hardware sensors (including the **Accelerometer**, **Gyroscope**, and **Device Motion** sensors).</p>
+    <ul>
+        <li><strong>Purpose:</strong> This data is processed through a Low-Pass Filter (LPF) to identify rapid decelerations (Harsh Braking), quick accelerations (Harsh Acceleration), and heavy lateral forces (Aggressive Cornering/Sharp Turns).</li>
+        <li><strong>Data Handling:</strong> All raw sensor telemetry remains local to your device and is used dynamically during active tracking sessions.</li>
+    </ul>
+
+    <h3>C. Audio and Microphone Access (RECORD_AUDIO)</h3>
+    <p>SyncDrive requests access to your device's microphone via the <code>android.permission.RECORD_AUDIO</code> permission.</p>
+    <ul>
+        <li><strong>Purpose:</strong> Microphone access is used to enable voice-based AI driving commands, driver voice alerts, or real-time hands-free coaching triggers.</li>
+        <li><strong>Data Handling:</strong> Audio recording only occurs when you trigger a voice feature. Audio data is processed strictly locally for speech processing and is <strong>never recorded, stored, or transmitted</strong> to any external servers without your explicit commands.</li>
+    </ul>
+
+    <h3>D. Pictures and Media Access (Camera and Gallery)</h3>
+    <p>SyncDrive requests access to your device's camera and photo gallery to capture or select a profile picture.</p>
+    <ul>
+        <li><strong>Purpose:</strong> Allows you to upload or capture a profile photo to personalize your driver profile.</li>
+        <li><strong>Data Handling:</strong> Photos are stored strictly on your device's local memory store (MMKV) and are used solely for UI rendering.</li>
+    </ul>
+
+    <div class="highlight-box">
+        <p>🔒 Data Privacy & Local Processing Principle: SyncDrive prioritizes offline privacy. Telemetry calculation, safety scoring, events analysis, and AI safety coach insights are processed locally on your physical device using secure MMKV storage. No location traces or voice snippets are sold or distributed.</p>
+    </div>
+
+    <h2>Required Android Permissions List</h2>
+    <p>Below is the summary of Android permissions declared in our application manifest for Google Play Store verification:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Permission String</th>
+                <th>Classification</th>
+                <th>Description & Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>android.permission.ACCESS_FINE_LOCATION</code></td>
+                <td>Dangerous / Sensitive</td>
+                <td>Accesses precise GPS coordinates in the foreground to plot driving routes and calculate speed.</td>
+            </tr>
+            <tr>
+                <td><code>android.permission.ACCESS_COARSE_LOCATION</code></td>
+                <td>Dangerous / Sensitive</td>
+                <td>Accesses network-based location coordinates as a fallback.</td>
+            </tr>
+            <tr>
+                <td><code>android.permission.RECORD_AUDIO</code></td>
+                <td>Dangerous / Sensitive</td>
+                <td>Accesses device microphone for hands-free AI coaching interactions and speech processing.</td>
+            </tr>
+            <tr>
+                <td><code>android.permission.CAMERA</code></td>
+                <td>Dangerous</td>
+                <td>Allows taking a photo using the device camera for the profile avatar.</td>
+            </tr>
+            <tr>
+                <td><code>android.permission.READ_MEDIA_IMAGES</code></td>
+                <td>Dangerous</td>
+                <td>Accesses photo gallery to select a profile picture on Android 13+.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Use of Your Personal Data</h2>
+    <p>The Company uses your Personal Data for the following purposes:</p>
+    <ul>
+        <li><strong>To maintain our Service:</strong> To calculate your safe driving scores, trip history, and logs.</li>
+        <li><strong>To manage Your Account:</strong> Registration, profile avatar, and vehicle details storage.</li>
+        <li><strong>To provide safety tips:</strong> Our local AI coaching modules analyze driving events locally to advise you on better habits.</li>
+        <li><strong>For other purposes:</strong> Diagnostic analytics, crash reporting, and safety scoring calibration.</li>
+    </ul>
+
+    <h2>Data Sharing and Disclosure</h2>
+    <p>We do not sell, rent, or trade your personal information, location traces, or raw telemetry data to third parties. We may disclose personal data only under the following conditions:</p>
+    <ul>
+        <li><strong>With Your Consent:</strong> We will share data if you explicitly command us to export or share a trip report.</li>
+        <li><strong>Law Enforcement:</strong> If required by valid public authorities (such as a court order).</li>
+        <li><strong>Legal Obligations:</strong> To defend or protect the rights or safety of the Company, its users, or the public.</li>
+    </ul>
+
+    <h2>Retention of Your Personal Data</h2>
+    <p>The Company retains your data only for as long as is necessary for the purposes set out in this policy. All drive histories, settings, and profile info are stored in the application's local sandbox memory (MMKV). If you clear the application data or uninstall the app, all local data is immediately and permanently deleted.</p>
+
+    <h2>Delete Your Personal Data</h2>
+    <p>You have the right to delete your personal data. You can perform this directly within the application by navigating to the **Settings** menu and selecting the **Reset Thresholds / Reset Data** option. This will permanently erase your profile and trip history logs from your device.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Our Service does not address anyone under the age of 16. We do not knowingly collect personally identifiable information from anyone under 16. If we discover we have collected data from a child under 16 without verification of parental consent, we will delete that data immediately.</p>
+
+    <h2>Changes to this Privacy Policy</h2>
+    <p>We may update Our Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this page. You are advised to review this policy periodically for updates.</p>
+
+    <h2>Contact Us</h2>
+    <div class="contact-card">
+        <p>If you have any questions about this Privacy Policy, you can contact us:</p>
+        <p style="margin-top: 10px; font-weight: 500;">📩 By email: <a href="mailto:himanshuanand563@gmail.com">himanshuanand563@gmail.com</a></p>
+        <p style="margin-top: 5px; color: var(--text-muted); font-size: 14px;">Bihar, India</p>
+    </div>
+</div>
+
+</body>
+</html>
