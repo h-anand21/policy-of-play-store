@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Arrow Kingdom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #F59E0B;
+      --primary-dark: #D97706;
+      --accent: #E11D48;
+      --bg: #0B1120;
+      --card-bg: #111827;
+      --card-border: #1F2937;
+      --text-main: #F3F4F6;
+      --text-muted: #9CA3AF;
+      --highlight: #FEF3C7;
+      --badge-bg: rgba(245, 158, 11, 0.12);
+      --badge-border: rgba(245, 158, 11, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 40px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 48px 40px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 28px 20px;
+        border-radius: 14px;
+      }
+      body {
+        padding: 16px 10px;
+      }
+    }
+
+    .header {
+      text-align: center;
+      padding-bottom: 32px;
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      color: var(--primary);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .updated-date {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-top: 36px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: #FBBF24;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #D1D5DB;
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin: 12px 0 20px 24px;
+      color: #D1D5DB;
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* Highlight Permissions Box */
+    .permissions-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin: 20px 0 28px 0;
+    }
+
+    .perm-card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      border-radius: 12px;
+      padding: 18px 20px;
+      transition: all 0.2s ease;
+    }
+
+    .perm-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    .perm-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .perm-desc {
+      font-size: 14px;
+      color: #94A3B8;
+      margin-bottom: 0;
+    }
+
+    .highlight-box {
+      background: rgba(245, 158, 11, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      color: #FDE68A;
+    }
+
+    .contact-card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .contact-card a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      word-break: break-all;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--card-border);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <div class="brand-badge">🏹 Arrow Kingdom Official</div>
+      <h1>Privacy Policy</h1>
+      <p class="updated-date">Last updated: October 13, 2026</p>
+    </div>
+
+    <p>
+      This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+    </p>
+    <p>
+      We use Your Personal Data to provide and improve the Service. We collect, use, and disclose Your information as described in this Privacy Policy and, where required by applicable law, only where We have a valid legal basis to do so, including Your consent (where consent is required).
+    </p>
+
+    <!-- DEVICE PERMISSIONS SPECIAL SECTION -->
+    <h2>📱 Device Permissions Used by Arrow Kingdom</h2>
+    <p>
+      To ensure an immersive and smooth casual gaming experience, the Application requests or utilizes the following permissions on Your device:
+    </p>
+
+    <div class="permissions-grid">
+      <div class="perm-card">
+        <div class="perm-title">🔊 Audio Playback & Sound Effects</div>
+        <p class="perm-desc">
+          Allows the game to play background music (ambient kingdom melodies) and interactive sound effects (arrow release, target hit, level victory fanfare, and button taps). The game only outputs audio and <strong>does not record audio or access your microphone</strong>.
+        </p>
+      </div>
+
+      <div class="perm-card">
+        <div class="perm-title">📳 Haptic & Vibration Feedback (android.permission.VIBRATE)</div>
+        <p class="perm-desc">
+          Enables brief, gentle haptic tactile vibrations when interacting with game elements, such as clearing arrows, unlocking chests, or tapping buttons. Users can toggle haptic feedback on or off at any time inside the in-game Settings menu.
+        </p>
+      </div>
+
+      <div class="perm-card">
+        <div class="perm-title">💾 Local Device Storage & Offline Game Saves</div>
+        <p class="perm-desc">
+          Arrow Kingdom is designed as a privacy-friendly, 100% offline-playable game. Your progress, unlocked worlds, themes, high scores, coins, gems, and player preferences are securely saved locally on your device via AsyncStorage. <strong>We do not upload your gameplay progress to external personal tracking servers.</strong>
+        </p>
+      </div>
+
+      <div class="perm-card">
+        <div class="perm-title">🌐 Network & Internet Access (Diagnostic Only)</div>
+        <p class="perm-desc">
+          Used solely for standard application updates, Google Play services verification, and crash reporting diagnostics. We do not track or sell your browsing history or personal identification.
+        </p>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      🛡️ <strong>Family-Friendly & Offline First:</strong> Arrow Kingdom does not require account creation, does not access device contacts, camera, or precise GPS location, and does not sell user data to third parties.
+    </div>
+
+    <!-- INTERPRETATION AND DEFINITIONS -->
+    <h2>📖 Interpretation and Definitions</h2>
+
+    <h3>Interpretation</h3>
+    <p>
+      The words whose initial letters are capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+    </p>
+
+    <h3>Definitions</h3>
+    <p>For the purposes of this Privacy Policy:</p>
+    <ul>
+      <li><strong>Account</strong> means a unique account created for You to access Our Service or parts of Our Service.</li>
+      <li><strong>Application</strong> refers to <strong>Arrow Kingdom</strong>, the software program provided by the Company.</li>
+      <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Privacy Policy) refers to Arrow Kingdom.</li>
+      <li><strong>Country/State</strong> refers to: <strong>Bihar, India</strong>.</li>
+      <li><strong>Device</strong> means any device that can access the Service, such as a cell phone, a digital tablet, or a computer.</li>
+      <li><strong>Personal Data</strong> (or "Personal Information") is any information that relates to an identified or identifiable individual.</li>
+      <li><strong>Service</strong> refers to the Application.</li>
+      <li><strong>Service Provider</strong> means any natural or legal person who processes data on behalf of the Company to facilitate or analyze the Service.</li>
+      <li><strong>Usage Data</strong> refers to data collected automatically, either generated by using the Service or from the Service infrastructure itself (e.g. app session duration).</li>
+      <li><strong>User</strong> means any individual who accesses or uses the Service.</li>
+      <li><strong>You</strong> means the individual accessing or using the Service, or the company or other legal entity on behalf of which such individual is accessing or using the Service.</li>
+    </ul>
+
+    <!-- DATA COLLECTION AND USE -->
+    <h2>🔍 Collecting and Using Your Personal Information</h2>
+
+    <h3>Types of Data Collected</h3>
+
+    <p><strong>Personal Data</strong></p>
+    <p>
+      While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You (such as first name and last name, or feedback email if You contact customer support).
+    </p>
+
+    <p><strong>Usage Data</strong></p>
+    <p>
+      Usage Data is collected automatically when using the Service. When You access the Service by or through a mobile device, We may collect information automatically, including the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, unique device identifiers, and other diagnostic data.
+    </p>
+
+    <h3>Use of Your Personal Data</h3>
+    <p>The Company may use Personal Data for the following purposes:</p>
+    <ul>
+      <li><strong>To provide and maintain Our Service:</strong> including monitoring the performance and stability of Our Application.</li>
+      <li><strong>To manage Your requests:</strong> To attend to and resolve customer support inquiries.</li>
+      <li><strong>For performance of contracts:</strong> To ensure compliance with game rules and terms of service.</li>
+      <li><strong>To contact You:</strong> When necessary regarding critical technical updates, bug fixes, or security alerts.</li>
+      <li><strong>For game optimization:</strong> To evaluate gameplay balance, optimize level difficulty, and improve player satisfaction.</li>
+    </ul>
+
+    <h3>Retention of Your Personal Data</h3>
+    <p>
+      The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy:
+    </p>
+    <ul>
+      <li><strong>Application usage statistics:</strong> Retained for up to 24 months to understand feature adoption and game improvements.</li>
+      <li><strong>Server diagnostic logs:</strong> Retained for up to 24 months for security monitoring and troubleshooting purposes.</li>
+    </ul>
+
+    <!-- DATA TRANSFER & DELETION -->
+    <h2>🔒 Transfer and Deletion of Your Data</h2>
+    <p>
+      Your information is processed at the Company's operating offices and in any other places where the parties involved in processing are located. Where required by applicable law, We ensure that any international transfers are subject to appropriate safeguards.
+    </p>
+    <p>
+      <strong>Delete Your Data:</strong> You have the right to request the deletion of any Personal Data We hold about You. Since Arrow Kingdom stores gameplay saves locally on your device, uninstalling the Application or clearing the app cache/data via your Android device settings will immediately delete all local game data. To request manual removal of any support communication records, contact Us at the email below.
+    </p>
+
+    <!-- DISCLOSURE -->
+    <h2>⚖️ Disclosure of Your Personal Data</h2>
+    <p>The Company may disclose Your Personal Data under the following circumstances:</p>
+    <ul>
+      <li><strong>Law enforcement:</strong> If required to do so by applicable law or in response to valid requests by public authorities (such as a court order).</li>
+      <li><strong>Legal requirements:</strong> To protect and defend the rights, property, or safety of the Company, Users, or the general public.</li>
+    </ul>
+
+    <!-- SECURITY -->
+    <h2>🛡️ Security of Your Data</h2>
+    <p>
+      The security of Your data is of paramount importance to Us. We implement industry-standard administrative and technical measures to protect Your information. However, no electronic storage or transmission over the internet is 100% secure, and We cannot guarantee absolute security.
+    </p>
+
+    <!-- CHILDREN'S PRIVACY -->
+    <h2>👶 Children's and Minors' Privacy</h2>
+    <p>
+      Our Application is family-friendly and designed for general audiences. We do not knowingly collect personally identifiable information from children under the age of 13 (or under 16 where required by local law). If You are a parent or guardian and believe that Your child has provided Us with personal data without consent, please contact Us immediately, and We will promptly take steps to delete that information.
+    </p>
+
+    <!-- CHANGES -->
+    <h2>🔄 Changes to this Privacy Policy</h2>
+    <p>
+      We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this document. You are advised to review this Privacy Policy periodically for any updates.
+    </p>
+
+    <!-- CONTACT US -->
+    <h2>📬 Contact Us</h2>
+    <p>If You have any questions, concerns, or requests regarding this Privacy Policy, You can contact Us directly:</p>
+
+    <div class="contact-card">
+      <p style="margin-bottom: 8px; color: #94A3B8;">Official Support & Privacy Email:</p>
+      <a href="mailto:himanshuanand563@gmail.com">himanshuanand563@gmail.com</a>
+      <p style="margin-top: 10px; font-size: 13px; color: #64748B;">Arrow Kingdom • Bihar, India</p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Arrow Kingdom. All rights reserved.
+    </div>
+
+  </div>
+
+</body>
+</html>
